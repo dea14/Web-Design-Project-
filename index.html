@@ -14,7 +14,7 @@
 		<nav>
 			<div class="row clearfix">
 				<img src="logo.png" class="logo">
-				<ul class="main-nav animated slideInDown">
+				<ul class="main-nav animated slideInDown" id="check-class">
 					<li> <a href="#"> Cake Delivery </a> </li>
 					<li> <a href="#"> How to Order </a> </li>
 					<li> <a href="#"> Check More </a> </li>
@@ -28,34 +28,25 @@
 
    		<h1>Welcome to <span class="colorchange">Star Cafe</span><br>
    		House of Cake Lovers</h1>
-   		
-   		<a href="#" clas="btn btn-full">show me more </a>
-   		<a href="#" clas="btn btn-nav"> click to order </a>
+   		 
+   		<a href="#" class="btn btn-full">show me more </a>
+   		<a href="#" class="btn btn-nav"> click to order </a>
 
    	   </div>
 
-
-
-
    	</header>
+   	<script type="text/javascript">
+   		function slideshow() {
+   			var x = document.getElementById('check-class');
+   			if(x.style.display === "none") {
+   				x.style.display="block";
+   			}else{
+   				x.style.display="none";
+   			}
+   		}
+   	</script>
 
 
-	<div class="bgimage">
-		<div class="menu">
-			
-			<div class="leftmenu">
- 
-		</div>
-
-		<div class="text">
-			<h4> DESIGN • DEVELOPMENT • BRANDING </h4>
-			<h1> CREATIVE & EXPERIENCED </h1>
-			<h3> WE ARE THE ONE OF THE WORLD’S TOP CREATIVE DESIGN AGENCIES </h3>
-			<button id="buttonone"> like share </button>
-			<button id="buttontwo"> Subscribe </button> 
-		</div>
-
-	</div>
-
+	
 </body>
 </html>
